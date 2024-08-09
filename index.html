@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlacedUp</title>
+    <style>
+        /* Add some basic styling to our header */
+        header {
+            background-color: #5f5c5c; /* Solid background color */
+            color: #e9e10a; /* White text color */
+            padding: 20px; /* Add some padding */
+            text-align: left; /* Center the content */
+        }
+        /* Style our logo and name */
+        .logo {
+            display: inline-block;
+            margin-right: 25px;
+        }
+        .name {
+            font-size: 80px;
+            font-weight: bold;
+        }
+        /* Style our flex boxes */
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px;
+        }
+        .flex-box {
+            background-color: #f7f7f7; /* Light gray background color */
+            padding: 20px;
+            border: 1px solid #ddd; /* Light gray border */
+            border-radius: 20px; /* Rounded corners */
+            width: 45%; /* Take up 45% of the container width */
+        }
+        .flex-box h2 {
+            margin-top: 0; /* Remove top margin from h2 element */
+        }
+        /* Style our footer */
+        footer {
+            background-color: #333; /* Solid background color */
+            color: #fff; /* White text color */
+            padding: 20px; /* Add some padding */
+            text-align: center; /* Center the content */
+            clear: both; /* Clear the floats */
+        }
+        /* Style our social media buttons */
+        .social-media {
+            margin: 60px;
+            
+        }
+        .social-media a {
+            margin: 10px;
+            font-size: 24px;
+            color: #fff;
+        }
+        .social-media a:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Business Logo" class="logo"> <!-- Replace with your logo image -->
+        <span class="name">Business Name</span> <!-- Replace with your business name -->
+    </header>
+    <main>
+        <div class="flex-container">
+            <div class="flex-box">
+                <h2>Post Job</h2>
+                <p>Post a job opening and find the perfect candidate </p>
+                <button>Post</button>
+            </div>
+            <div class="flex-box">
+                <h2>Looking for Job</h2>
+                <p>Search for job openings and find your dream job</p>
+                <button>Search</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.instagram.com/yourinstagramhandle/" target="_blank" margin-left: 20%;>Instagram<i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/yourlinkedincompany/" target="_blank" margin-right: 20%;>LinkedIn<i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2021 Placedup. All rights reserved.</p>
+    </footer>
+</body>
+</html>
