@@ -1,0 +1,52 @@
+  header {
+            background-color: #5f5c5c; /* Solid background color */
+            color: #e9e10a; /* White text color */
+            padding: 20px; /* Add some padding */
+            text-align: left; /* Center the content */
+        }
+        /* Style our logo and name */
+        .logo {
+            display: inline-block;
+            margin-right: 25px;
+        }
+        .name {
+            font-size: 80px;
+            font-weight: bold;
+        }
+        /* Style our flex boxes */
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px;
+        }
+        .flex-box {
+            background-color: #f7f7f7; /* Light gray background color */
+            padding: 20px;
+            border: 1px solid #ddd; /* Light gray border */
+            border-radius: 20px; /* Rounded corners */
+            width: 45%; /* Take up 45% of the container width */
+        }
+        .flex-box h2 {
+            margin-top: 0; /* Remove top margin from h2 element */
+        }
+        /* Style our footer */
+        footer {
+            background-color: #333; /* Solid background color */
+            color: #fff; /* White text color */
+            padding: 20px; /* Add some padding */
+            text-align: center; /* Center the content */
+            clear: both; /* Clear the floats */
+        }
+        /* Style our social media buttons */
+        .social-media {
+            margin: 60px;
+            
+        }
+        .social-media a {
+            margin: 10px;
+            font-size: 24px;
+            color: #fff;
+        }
+        .social-media a:hover {
+            color: #ccc;
+        }
