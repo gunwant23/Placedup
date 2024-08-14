@@ -1,0 +1,60 @@
+<!-- The popup window -->
+<div id="popup" class="popup">
+  <!-- The form -->
+  <form>
+    <h2>Hire a Candidate</h2>
+    <section class="job-details">
+      <label for="job-title">Job Title:</label>
+      <input type="text" id="job-title" name="job-title" maxlength="50" required>
+      
+      <label for="job-location">Job Location:</label>
+      <select id="job-location" name="job-location" required>
+        <option value="">Select a city</option>
+        <option value="New York">New York</option>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="Chicago">Chicago</option>
+        <option value="Houston">Houston</option>
+        <option value="Phoenix">Phoenix</option>
+        <!-- Add more cities here -->
+      </select>
+      
+      <label for="number-of-openings">Number of Openings:</label>
+      <select id="number-of-openings" name="number-of-openings" required>
+        <option value="">Select a number</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    </section>
+    
+    <hr>
+    
+    <section class="candidate-requirements">
+      <h3>Candidate Requirements:</h3>
+      <!-- Add fields for candidate requirements here -->
+      <!-- For example: -->
+      <label for="education">Education:</label>
+      <input type="text" id="education" name="education">
+      
+      <label for="experience">Experience:</label>
+      <input type="text" id="experience" name="experience">
+      
+      <!-- Add more fields as needed -->
+    </section>
+    
+    <input type="submit" value="Hire Candidate" class="submit-button">
+  </form>
+  
+  <!-- Close button -->
+  <button class="close-button" onclick="document.getElementById('popup').style.display='none';">Close</button>
+</div>
+
+<!-- Button to open the popup window -->
+<button class="open-button" onclick="document.getElementById('popup').style.display='block';">Hire a Candidate</button>
