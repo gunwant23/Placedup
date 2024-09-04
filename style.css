@@ -1,8 +1,12 @@
-  header {
-            background-color: #5f5c5c; /* Solid background color */
-            color: #e9e10a; /* White text color */
+  body{background-color:#545454;}
+  
+  .header {
+            background-color: #FFD523; /* Solid background color */
+            color: #d2cf72; /* White text color */
             padding: 20px; /* Add some padding */
-            text-align: left; /* Center the content */
+            text-align: left;
+            position: fixed;
+             /* Center the content */
         }
         /* Style our logo and name */
         .logo {
@@ -12,34 +16,45 @@
         .name {
             font-size: 80px;
             font-weight: bold;
+            color: #FFD523;
         }
         /* Style our flex boxes */
         .flex-container {
             display: flex;
             justify-content: space-around;
-            margin: 40px;
-        }
+            margin: 0px;
+            background-color: #2C2E43;
+            gap: 20px;
+         }
         .flex-box {
-            background-color: #f7f7f7; /* Light gray background color */
-            padding: 20px;
-            border: 1px solid #ddd; /* Light gray border */
-            border-radius: 20px; /* Rounded corners */
-            width: 45%; /* Take up 45% of the container width */
+            background-color: #E0B0FF; /* Light gray background color */
+            padding: 50px;
+            border: 5px solid #ccc; /* Light gray border */
+            border-radius: 30px; /* Rounded corners */
+            width: 45%;
+            min-height: 200px;max-height: 250px;
+            justify-content: center;
+            padding: 20px 40px;/* Take up 45% of the container width */
+            text-align: center;
+            font-size: 150%;
         }
         .flex-box h2 {
-            margin-top: 0; /* Remove top margin from h2 element */
+            margin: top 10px;;
+            font-size: 200%;
+            justify-content: center;
+            text-align: center; /* Remove top margin from h2 element */
         }
         /* Style our footer */
         footer {
             background-color: #333; /* Solid background color */
-            color: #fff; /* White text color */
-            padding: 20px; /* Add some padding */
+            color:#000000; /* White text color */
+            padding: 5px; /* Add some padding */
             text-align: center; /* Center the content */
             clear: both; /* Clear the floats */
         }
         /* Style our social media buttons */
         .social-media {
-            margin: 60px;
+            margin: 40px;
             
         }
         .social-media a {
@@ -50,3 +65,40 @@
         .social-media a:hover {
             color: #ccc;
         }
+
+
+.button {
+    font-size: 40px;
+    
+    /* Set the background color and text color */
+    background-color: #5B7C99; /* Green */
+    color: #000000; /* White */
+    
+    /* Add some border radius to make the button rounded */
+    border-radius: 20px;
+    
+    /* Add some box shadow to give the button some depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    
+    /* Make the button cursor a pointing hand */
+    cursor:pointer;
+    
+    /* Add some transition effect to make the button more interactive */
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .button:hover {
+    /* Change the background color on hover */
+    background-color: #3e8e41; /* Darker green */
+    
+    /* Add some more box shadow on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .button:active {
+    /* Change the background color on active */
+    background-color: #2e6c31; /* Even darker green */
+    
+    /* Add some more box shadow on active */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }

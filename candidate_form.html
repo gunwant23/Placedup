@@ -1,0 +1,71 @@
+<!-- candidate-form -->
+
+
+<form>
+    <!-- Contact Information Section -->
+    <h2>Contact Information</h2>
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required><br><br>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" title="Enter a 10-digit phone number" required><br><br>
+    <label for="email">Professional Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your professional email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Enter a valid email address" required><br><br>
+    <label for="linkedin">LinkedIn Profile (optional):</label>
+    <input type="url" id="linkedin" name="linkedin" placeholder="Enter your LinkedIn profile URL"><br><br>
+  
+    <!-- Resume Summary or Objective Section -->
+    <h2>Resume Summary or Objective</h2>
+    <label for="summary">Brief Summary:</label>
+    <textarea id="summary" name="summary" placeholder="Enter a brief summary of your career goals and what you bring to the table" required></textarea><br><br>
+  
+    <!-- Work Experience Section -->
+    <h2>Work Experience</h2>
+    <label for="workExperience">Work Experience:</label>
+    <table>
+      <tr>
+        <th>Job Title</th>
+        <th>Company Name</th>
+        <th>Location</th>
+        <th>Dates of Employment</th>
+        <th>Responsibilities and Achievements</th>
+      </tr>
+      <tr>
+        <td><input type="text" id="jobTitle" name="jobTitle" placeholder="Enter job title" required></td>
+        <td><input type="text" id="companyName" name="companyName" placeholder="Enter company name" required></td>
+        <td><input type="text" id="location" name="location" placeholder="Enter location" required></td>
+        <td><input type="date" id="startDate" name="startDate" required> - <input type="date" id="endDate" name="endDate" required></td>
+        <td><textarea id="responsibilities" name="responsibilities" placeholder="Enter responsibilities and achievements" required></textarea></td>
+      </tr>
+    </table>
+    <button type="button" onclick="addWorkExperienceRow()">Add Another Work Experience</button><br><br>
+  
+    <!-- Education Section -->
+    <h2>Education</h2>
+    <label for="education">Education:</label>
+    <table>
+      <tr>
+        <th>Degree</th>
+        <th>Institution</th>
+        <th>Graduation Date</th>
+      </tr>
+      <tr>
+        <td><input type="text" id="degree" name="degree" placeholder="Enter degree" required></td>
+        <td><input type="text" id="institution" name="institution" placeholder="Enter institution" required></td>
+        <td><input type="date" id="graduationDate" name="graduationDate" required></td>
+      </tr>
+    </table>
+    <button type="button" onclick="addEducationRow()">Add Another Education</button><br><br>
+  
+    <!-- Skills Section -->
+    <h2>Skills</h2>
+    <label for="skills">Certified Skills:</label>
+    <textarea id="skills" name="skills" placeholder="Enter relevant skills that match the job description" required></textarea><br><br>
+  
+    <!-- Resume Upload Section -->
+    <h2>Resume</h2>
+    <label for="resume">Upload Resume (PDF only):</label>
+    <input type="file" id="resume" name="resume" accept=".pdf"><br><br>
+  
+    <!-- Submit Button -->
+    <input type="submit" value="submit">
+</form>
