@@ -6,8 +6,9 @@
             padding: 20px; /* Add some padding */
             text-align: left;
             position: fixed;
-             /* Center the content */
-        }
+             /* Center the content */}
+ 
+        
         /* Style our logo and name */
         .logo {
             display: inline-block;
@@ -102,3 +103,28 @@
     /* Add some more box shadow on active */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
   }
+/*navigation*/
+
+
+  
+  nav ul {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 40px;
+    
+  }
+  
+  
+  nav button {
+    border-radius: 30%;
+    background-color: rgb(221, 186, 31);
+    color: rgb(29, 9, 9);
+    font-size: 58px;
+    font-family: cursive;
+  }
+  
+ 

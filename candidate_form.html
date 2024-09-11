@@ -1,8 +1,8 @@
-<!-- candidate-form -->
 
 
-<form>
-    <!-- Contact Information Section -->
+
+<form id="candidate" onsubmit="sendEmail2();reset();return false">
+    
     <h2>Contact Information</h2>
     <label for="fullName">Full Name:</label>
     <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required><br><br>
@@ -13,14 +13,14 @@
     <label for="linkedin">LinkedIn Profile (optional):</label>
     <input type="url" id="linkedin" name="linkedin" placeholder="Enter your LinkedIn profile URL"><br><br>
   
-    <!-- Resume Summary or Objective Section -->
+    
     <h2>Resume Summary or Objective</h2>
     <label for="summary">Brief Summary:</label>
     <textarea id="summary" name="summary" placeholder="Enter a brief summary of your career goals and what you bring to the table" required></textarea><br><br>
   
-    <!-- Work Experience Section -->
+   
     <h2>Work Experience</h2>
-    <label for="workExperience">Work Experience:</label>
+    <label for="workExperience">Describe your previous work experience</label>
     <table>
       <tr>
         <th>Job Title</th>
@@ -39,9 +39,9 @@
     </table>
     <button type="button" onclick="addWorkExperienceRow()">Add Another Work Experience</button><br><br>
   
-    <!-- Education Section -->
+   
     <h2>Education</h2>
-    <label for="education">Education:</label>
+    <label for="education">Your acadmia </label>
     <table>
       <tr>
         <th>Degree</th>
@@ -56,16 +56,18 @@
     </table>
     <button type="button" onclick="addEducationRow()">Add Another Education</button><br><br>
   
-    <!-- Skills Section -->
+    
     <h2>Skills</h2>
     <label for="skills">Certified Skills:</label>
     <textarea id="skills" name="skills" placeholder="Enter relevant skills that match the job description" required></textarea><br><br>
   
-    <!-- Resume Upload Section -->
+    
     <h2>Resume</h2>
     <label for="resume">Upload Resume (PDF only):</label>
     <input type="file" id="resume" name="resume" accept=".pdf"><br><br>
   
     <!-- Submit Button -->
     <input type="submit" value="submit">
-</form>
+    <link rel="stylesheet" href="style3.css">
+  </form>
+   
