@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-        <img src="img\PLACED (1).png" alt="Business Logo" class="logo"> <!-- Replace with your logo image -->
+        <img src="img\PLACED (1).png" alt="Business Logo" class="logo"> 
     </header>
     <main>
     <div>
@@ -38,5 +38,91 @@
         <p>&copy; 2021 Placedup. All rights reserved.</p>
     </footer>
 <link rel="stylesheet" href="style.css"> 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail() {
+        const jobTitle = document.getElementById("job-title").value;
+        const jobDescription = document.getElementById("job-description").value;
+        const jobCategory = document.getElementById("job-category").value;
+        const companyName = document.getElementById("company-name").value;
+        const companyDescription = document.getElementById("company-description").value;
+        const salaryRange = document.getElementById("salary-range").value;
+        const experience = document.getElementById("experience").value;
+        const location = document.getElementById("location").value;
+        const locationPin = document.getElementById("locationpin").value;
+      
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "username",
+          Password: "password",
+          To: "placedup@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "Job Posting",
+          Body: `
+            Job Title: ${jobTitle}\n
+            Job Description: ${jobDescription}\n
+            Job Category: ${jobCategory}\n
+            Company Name: ${companyName}\n
+            Company Description: ${companyDescription}\n
+            Salary Range: ${salaryRange}\n
+            Experience: ${experience}\n
+            Location: ${location}\n
+            PIN CODE: ${locationPin}
+          `
+        }).then(
+          message => alert("Response sent")
+        );
+      }
+        
+
+function sendEmail2() {
+    const fullName = document.getElementById("fullName").value;
+    const phone = document.getElementById("phone").value;
+    const email = document.getElementById("email").value;
+    const linkedin = document.getElementById("linkedin").value;
+    const summary = document.getElementById("summary").value;
+    const jobTitle = document.getElementById("jobTitle").value;
+    const companyName = document.getElementById("companyName").value;
+    const location = document.getElementById("location").value;
+    const startDate = document.getElementById("startDate").value;
+    const endDate = document.getElementById("endDate").value;
+    const responsibilities = document.getElementById("responsibilities").value;
+    const degree = document.getElementById("degree").value;
+    const institution = document.getElementById("institution").value;
+    const graduationDate = document.getElementById("graduationDate").value;
+    const skills = document.getElementById("skills").value;
+    const resume = document.getElementById("resume").value;
+  
+    Email.send({
+      Host: "smtp.elasticemail.com",
+      Username: "username",
+      Password: "password",
+      To: "placedup@gmail.com",
+      From: document.getElementById("email").value,
+      Subject: "Job Application",
+      Body: `
+        Full Name: ${fullName}\n
+        Phone Number: ${phone}\n
+        Professional Email: ${email}\n
+        LinkedIn Profile: ${linkedin}\n
+        Resume Summary or Objective: ${summary}\n
+        Work Experience:\n
+          Job Title: ${jobTitle}\n
+          Company Name: ${companyName}\n
+          Location: ${location}\n
+          Dates of Employment: ${startDate} - ${endDate}\n
+          Responsibilities and Achievements: ${responsibilities}\n
+        Education:\n
+          Degree: ${degree}\n
+          Institution: ${institution}\n
+          Graduation Date: ${graduationDate}\n
+        Skills: ${skills}\n
+      `
+    }).then(
+      message => alert("Response sent")
+    );
+  }
+</script>
+
 </body>
 </html>

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="posting-form.css">
 </head>
 <body>
-    <form id="posting-form">
+    <form id="posting-form" onsubmit="sendEmail();reset();return false">
         <h2>Post a Job</h2>
         <section>
             <h3>Job Details</h3>
@@ -54,9 +54,11 @@
             <input type="text" id="location" name="location" required>
             <label for="locationpin"> PIN CODE:</label>
             <input type="text" id="location" name="location" required>
+            <input type="email" id="email" name="email" placeholder="Enter your professional email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Enter a valid email address" required><br>
         </section>
 
         <button type="submit">Post Job</button>
     </form>
+    <link rel="stylesheet" href="style2.css"> 
 </body>
 </html>
