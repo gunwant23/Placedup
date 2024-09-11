@@ -28,14 +28,13 @@
             gap: 20px;
          }
         .flex-box {
-            background-color: #E0B0FF; /* Light gray background color */
+            background-color: #E0B0FF; 
             padding: 50px;
-            border: 5px solid #ccc; /* Light gray border */
-            border-radius: 30px; /* Rounded corners */
-            width: 45%;
+            border: 5px solid #ccc; 
+            border-radius: 30px;             width: 45%;
             min-height: 200px;max-height: 250px;
             justify-content: center;
-            padding: 20px 40px;/* Take up 45% of the container width */
+            padding: 20px 40px;
             text-align: center;
             font-size: 150%;
         }
@@ -43,15 +42,15 @@
             margin: top 10px;;
             font-size: 200%;
             justify-content: center;
-            text-align: center; /* Remove top margin from h2 element */
+            text-align: center; 
         }
         /* Style our footer */
         footer {
-            background-color: #333; /* Solid background color */
-            color:#000000; /* White text color */
-            padding: 5px; /* Add some padding */
-            text-align: center; /* Center the content */
-            clear: both; /* Clear the floats */
+            background-color: #333; 
+            color:#000000; 
+            padding: 5px; 
+            text-align: center; 
+            clear: both; 
         }
         /* Style our social media buttons */
         .social-media {
@@ -103,28 +102,5 @@
     /* Add some more box shadow on active */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
   }
-/*navigation*/
 
-
-  
-  nav ul {
-    list-style: none;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 40px;
-    
-  }
-  
-  
-  nav button {
-    border-radius: 30%;
-    background-color: rgb(221, 186, 31);
-    color: rgb(29, 9, 9);
-    font-size: 58px;
-    font-family: cursive;
-  }
-  
  

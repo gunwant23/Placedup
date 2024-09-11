@@ -7,13 +7,6 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><button><a href="#">Home</a></button></li>
-                <li><button><a href="#">About</a></button></li>
-                <li><button><a href="#">Contact</a></button></li>
-            </ul>
-        </nav>  
         <img src="img\PLACED (1).png" alt="Business Logo" class="logo"> 
     </header>
     <main>
@@ -124,7 +117,6 @@ function sendEmail2() {
           Institution: ${institution}\n
           Graduation Date: ${graduationDate}\n
         Skills: ${skills}\n
-        Resume: ${resume}
       `
     }).then(
       message => alert("Response sent")
